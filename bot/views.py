@@ -11,7 +11,7 @@ def File_Name(output_name):
     dt_now = datetime.datetime.now(pytz.timezone('Asia/Tokyo'))
     fdt_now = dt_now.strftime('%Y%m%d%H%M%S')
     #file_name = os.path.join(os.path.dirname(os.path.abspath('__file__')), ("media\\" + fdt_now + "_" + output_name))
-    file_name = os.path.join(os.path.dirname(os.path.abspath('__file__')), ("media\" + output_name))
+    file_name = os.path.join(os.path.dirname(os.path.abspath('__file__')), ("media\" + output_name)))
     return file_name
 
 
