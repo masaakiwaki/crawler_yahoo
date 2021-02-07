@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+
+
+
+{% block main %}
+
+    <form action="" method="get">
+        <input name="aikotoba" value="{{ request.GET.query }}" type="text">
+        <button type="submit">合言葉を照合</button>
+    </form>
+
+{% for member in object_list %}
+        {{ member.dengon | linebreaks}}<br>
+        <a href="{% url 'aikotoba_detail' member.id %}" class="btn btn-outline-primary btn-sm">詳細</a><br>
+{% endfor %}
+
+
+{% endblock %}

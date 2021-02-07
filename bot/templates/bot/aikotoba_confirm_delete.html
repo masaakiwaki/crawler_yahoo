@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block main %}
+
+    <form method="post">
+        {% csrf_token %}
+        <p>{{ aikotoba.kotoba }}を削除しますか？</p>
+        <input type="submit" value="削除する">
+    </form>
+
+{% endblock %}

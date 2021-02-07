@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block main %}
+<p>{{ message }}</p>
+<p><a href="{% url 'download_list' %}">CSVダウンロード</a></p>
+
+<p>================================</p>
+{% for html in htmltest %}
+
+<P>{{ html }}</P>
+
+{% endfor %}
+
+
+
+<img src="/media/screen.png" />
+
+{% endblock %}

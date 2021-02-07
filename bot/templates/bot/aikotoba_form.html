@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<form action="" method="POST">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <button type="submit">合言葉・伝言を保存</button>
+</form>
+
+{% endblock %}
