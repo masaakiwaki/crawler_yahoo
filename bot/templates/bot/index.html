@@ -10,7 +10,9 @@
     </div>
 
     <div class="row">
-        <a href="{% url 'download_list' %}" class="btn btn-info">CSVダウンロード</a>
+        <div class="col">
+            <a href="{% url 'download_list' %}" class="btn btn-info">CSVダウンロード</a>
+        </div>
     </div>
 
     <div class="row">
@@ -28,7 +30,10 @@
     </div>
 
     <div class="row">
-        <img src="/media/screen.png" />
+        <div class="col">
+            <p>スクレイピング時のスクリーンショットです。</p>
+            <img class="img-fluid" src="/media/screen.png" />
+        </div>
     </div>
 
 
