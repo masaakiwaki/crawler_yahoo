@@ -6,57 +6,33 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<style type="text/css">
-html{
-    font-size: 62.5%;
-}
-body{
-    font-size:1.6rem;/* 16px*/
-    line-height: 2;
-}
-h1 {
-    font-size: 36px;/* IE8以下とAndroid4.3以下用フォールバック */
-    font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429));/* 24px~36pxで可変*/
-    line-height: 1.3;
-}
-h2 {
-    font-size: 24px;/* IE8以下とAndroid4.3以下用フォールバック */
-    font-size: calc(2rem + ((1vw - 0.64rem) * 0.7143));/* 20px~24pxで可変*/
-    line-height: 1.3;
-}
-@media (min-width: 1200px) {/* 1200px以上*/
-    h1 {
-        font-size: 3.6rem;/* 36px*/
-    }
-    h2 {
-        font-size: 2.4rem;/* 24px*/
-    }
-}
-@media screen and (max-width: 1199px) {/* 640px以下*/
-    body{
-        font-size: 3.0rem;
-    line-height: 2;
-    }
-    h1{
-        font-size: 2.4rem;/* 24px*/
-    }
-    h2 {
-        font-size: 2rem;/* 20px*/
-    }
-}
- </style>
-
     </head>
 
-
+    <style type="text/css">
+        .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+            background-color: #f0f8ff;
+        }
+    </style>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
             <a class="navbar-brand" href="/">ポートフォリオ</a>
         </nav>
+        
+        <div class="container">
+
         {% block main %}
-        <p>※コンテンツがありません。</p>
+            <p>※コンテンツがありません。</p>
         {% endblock %}
+
         </div>
+        
+        <footer class="bg-dark text-center">
+            <div class="container">
+                <p class="my-0 text-white py-3">Portfolio</p>
+            </div>
+        </footer>
+        
     </body>
 </html>
